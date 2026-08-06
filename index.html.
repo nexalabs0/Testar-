@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Athletica Z Fitness — Matrículas Abertas | 8 Unidades em Manaus</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap');
+
+:root{
+  --void:#0B0B0D;
+  --carbon:#17181C;
+  --carbon-2:#1F2025;
+  --z-red:#E8262F;
+  --ignition:#FF7A29;
+  --pulse:#FF2E7E;
+  --steel:#F2F2F0;
+  --smoke:#9A9DA5;
+  --line: rgba(242,242,240,0.10);
+  --ring: conic-gradient(from 200deg, var(--z-red), var(--ignition), var(--pulse), var(--z-red));
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+html,body{margin:0;padding:0;background:var(--void);color:var(--steel);font-family:'Manrope',sans-serif;-webkit-font-smoothing:antialiased;}
+img,svg{display:block;max-width:100%;}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px;}
+.eyebrow{font-family:'Space Mono',monospace;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--ignition);margin:0 0 12px;}
+h1,h2,h3{font-family:'Anton',sans-serif;font-weight:400;text-transform:uppercase;letter-spacing:.01em;margin:0;}
+p{color:var(--smoke);line-height:1.65;font-size:15.5px;margin:0;}
+a{color:inherit;}
+::selection{background:var(--z-red);color:var(--steel);}
+
+@media (prefers-reduced-motion: reduce){
+  *{animation-duration:0.001s !important; animation-iteration-count:1 !important; transition-duration:0.001s !important;}
+}
+
+/* ---------- TOP BAR ---------- */
+.topbar{position:sticky;top:0;z-index:50;background:rgba(11,11,13,0.86);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);}
+.topbar-in{display:flex;align-items:center;justify-content:space-between;padding:14px 24px;max-width:1120px;margin:0 auto;}
+.brand{display:flex;align-items:center;gap:10px;}
+.brand .mini-ring{width:34px;height:34px;border-radius:50%;background:var(--ring);display:flex;align-items:center;justify-content:center;padding:3px;flex-shrink:0;}
+.brand .mini-ring-inner{width:100%;height:100%;border-radius:50%;background:var(--void);display:flex;align-items:center;justify-content:center;}
+.brand .mini-ring-inner span{font-family:'Anton',sans-serif;font-size:15px;transform:skewX(-6deg);}
+.brand-name{font-family:'Anton',sans-serif;font-size:15px;letter-spacing:.02em;line-height:1;}
+.brand-name b{color:var(--z-red);}
+.topbar-cta{font-family:'Space Mono',monospace;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;background:var(--z-red);color:var(--steel);padding:10px 18px;border-radius:999px;text-decoration:none;white-space:nowrap;transition:transform .15s ease, box-shadow .15s ease;box-shadow:0 0 0 rgba(232,38,47,0);}
+.topbar-cta:hover{transform:translateY(-1px);box-shadow:0 8px 22px rgba(232,38,47,0.35);}
+
+/* ---------- HERO ---------- */
+.hero{min-height:88vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;border-bottom:1px solid var(--line);position:relative;overflow:hidden;padding:100px 24px 70px;background:var(--void);}
+.hero::before{content:'';position:absolute;inset:0;background:
+  radial-gradient(circle at 50% 20%, rgba(232,38,47,0.20), transparent 45%),
+  radial-gradient(circle at 75% 75%, rgba(255,46,126,0.12), transparent 40%),
+  radial-gradient(circle at 15% 70%, rgba(255,122,41,0.10), transparent 40%);
+  pointer-events:none;}
+.ring-hero{width:150px;height:150px;border-radius:50%;background:var(--ring);display:flex;align-items:center;justify-content:center;padding:7px;margin-bottom:24px;position:relative;z-index:1;animation:spin 14s linear infinite;}
+@keyframes spin{to{transform:rotate(360deg);}}
+.ring-hero-inner{width:100%;height:100%;border-radius:50%;background:var(--void);display:flex;align-items:center;justify-content:center;}
+.z-mark{font-family:'Anton',sans-serif;font-size:60px;color:var(--steel);transform:skewX(-6deg);animation:counterspin 14s linear infinite;}
+@keyframes counterspin{to{transform:skewX(-6deg) rotate(-360deg);}}
+.hero-eyebrow{position:relative;z-index:1;font-family:'Space Mono',monospace;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--ignition);margin-bottom:14px;}
+.hero h1{font-size:clamp(38px,7.4vw,84px);line-height:0.92;position:relative;z-index:1;}
+.hero h1 span{color:var(--z-red);}
+.hero .sub{max-width:520px;margin:22px auto 0;position:relative;z-index:1;font-size:17px;}
+.hero-ctas{display:flex;gap:14px;margin-top:34px;position:relative;z-index:1;flex-wrap:wrap;justify-content:center;}
+.btn-primary{font-family:'Space Mono',monospace;font-weight:700;font-size:14px;letter-spacing:.06em;text-transform:uppercase;background:var(--z-red);color:var(--steel);padding:17px 30px;border-radius:999px;text-decoration:none;box-shadow:0 10px 30px rgba(232,38,47,0.35);transition:transform .15s ease;}
+.btn-primary:hover{transform:translateY(-2px);}
+.btn-ghost{font-family:'Space Mono',monospace;font-weight:700;font-size:14px;letter-spacing:.06em;text-transform:uppercase;background:transparent;color:var(--steel);padding:17px 30px;border-radius:999px;text-decoration:none;border:1px solid var(--line);transition:border-color .15s ease;}
+.btn-ghost:hover{border-color:var(--steel);}
+.hero-stats{display:flex;gap:36px;margin-top:56px;position:relative;z-index:1;flex-wrap:wrap;justify-content:center;}
+.hstat b{display:block;font-family:'Anton',sans-serif;font-size:30px;line-height:1;}
+.hstat span{font-family:'Space Mono',monospace;font-size:10.5px;color:var(--smoke);letter-spacing:.1em;text-transform:uppercase;}
+
+/* ---------- GALLERY ---------- */
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
+.gallery-item{position:relative;border-radius:18px;overflow:hidden;aspect-ratio:3/4;border:1px solid var(--line);background:var(--carbon);}
+.gallery-item img{width:100%;height:100%;object-fit:cover;display:block;filter:grayscale(.1) contrast(1.06) brightness(.94);transition:transform .5s ease, filter .5s ease;}
+.gallery-item:hover img{transform:scale(1.06);filter:grayscale(0) contrast(1.08) brightness(1);}
+.gallery-item::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg, transparent 45%, rgba(11,11,13,.82) 100%);pointer-events:none;}
+.gallery-item .tag{position:absolute;left:16px;bottom:14px;z-index:1;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--steel);}
+@media (max-width:640px){.gallery{grid-template-columns:1fr 1fr;}.gallery-item:first-child{grid-column:1 / -1;aspect-ratio:16/9;}}
+
+/* ---------- SECTION GENERIC ---------- */
+section{padding:80px 0;border-bottom:1px solid var(--line);}
+section:last-of-type{border-bottom:none;}
+.shead{margin-bottom:42px;max-width:620px;}
+.shead.center{margin-left:auto;margin-right:auto;text-align:center;}
+.shead h2{font-size:clamp(28px,4.4vw,42px);margin-bottom:14px;}
+
+/* ---------- BENEFITS ---------- */
+.benefits{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:2px;background:var(--line);border-radius:16px;overflow:hidden;border:1px solid var(--line);}
+.benefit{background:var(--carbon);padding:30px 26px;}
+.benefit .ico{width:42px;height:42px;border-radius:12px;background:var(--ring);display:flex;align-items:center;justify-content:center;margin-bottom:18px;}
+.benefit .ico span{font-family:'Space Mono',monospace;font-weight:700;font-size:16px;color:var(--void);}
+.benefit h3{font-family:'Manrope',sans-serif;font-weight:800;text-transform:none;font-size:17px;margin-bottom:8px;}
+.benefit p{font-size:14px;}
+
+/* ---------- PLANS ---------- */
+.plans{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:22px;}
+.plan{background:var(--carbon);border:1px solid var(--line);border-radius:20px;padding:34px 30px;position:relative;overflow:hidden;}
+.plan.featured{border-color:var(--z-red);background:linear-gradient(160deg, var(--carbon), var(--carbon-2));}
+.plan.featured::before{content:'MAIS ESCOLHIDO';position:absolute;top:22px;right:-38px;transform:rotate(45deg);background:var(--z-red);color:var(--steel);font-family:'Space Mono',monospace;font-size:10px;font-weight:700;letter-spacing:.1em;padding:5px 44px;}
+.plan-tag{font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ignition);margin-bottom:6px;}
+.plan h3{font-size:30px;margin-bottom:18px;}
+.price{display:flex;align-items:baseline;gap:4px;margin-bottom:6px;}
+.price .cur{font-family:'Manrope',sans-serif;font-weight:800;font-size:20px;color:var(--steel);}
+.price .num{font-family:'Anton',sans-serif;font-size:56px;line-height:1;}
+.price .cents{font-family:'Manrope',sans-serif;font-weight:800;font-size:20px;color:var(--smoke);}
+.price-note{font-family:'Space Mono',monospace;font-size:12px;color:var(--smoke);margin-bottom:24px;}
+.plan-list{list-style:none;margin:0 0 28px;padding:0;display:flex;flex-direction:column;gap:12px;}
+.plan-list li{display:flex;gap:10px;align-items:flex-start;font-size:14.5px;color:var(--steel);}
+.check{flex-shrink:0;width:19px;height:19px;border-radius:50%;border:1.5px solid var(--z-red);display:flex;align-items:center;justify-content:center;margin-top:1px;}
+.check::after{content:'';width:8px;height:5px;border-left:2px solid var(--z-red);border-bottom:2px solid var(--z-red);transform:rotate(-45deg) translateY(-1px);}
+.plan-list .note{color:var(--smoke);font-size:12px;padding-left:29px;margin-top:-6px;}
+.plan-cash{font-family:'Space Mono',monospace;font-size:12.5px;color:var(--smoke);background:var(--void);border:1px dashed var(--line);border-radius:10px;padding:10px 14px;margin-bottom:22px;}
+.plan-cash b{color:var(--steel);}
+.plan-cta{display:block;text-align:center;font-family:'Space Mono',monospace;font-weight:700;font-size:13.5px;letter-spacing:.06em;text-transform:uppercase;background:var(--z-red);color:var(--steel);padding:15px;border-radius:999px;text-decoration:none;}
+.plan.featured .plan-cta{box-shadow:0 10px 28px rgba(232,38,47,0.35);}
+.plan:not(.featured) .plan-cta{background:transparent;border:1px solid var(--line);color:var(--steel);}
+
+/* ---------- UNITS RING ---------- */
+.units-wrap{display:flex;align-items:center;gap:56px;flex-wrap:wrap;}
+.units-ring{position:relative;width:230px;height:230px;flex-shrink:0;margin:0 auto;}
+.units-ring svg{width:100%;height:100%;}
+.units-center{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;}
+.units-center .num{font-family:'Anton',sans-serif;font-size:46px;line-height:1;}
+.units-center .lbl{font-family:'Space Mono',monospace;font-size:10px;color:var(--smoke);letter-spacing:.12em;margin-top:4px;}
+.units-list{display:grid;grid-template-columns:1fr 1fr;gap:14px 28px;flex:1;min-width:260px;}
+.units-list div{display:flex;align-items:center;gap:10px;}
+.units-list .name{font-family:'Manrope',sans-serif;font-weight:700;font-size:14.5px;color:var(--steel);}
+.dot{width:9px;height:9px;border-radius:50%;flex-shrink:0;}
+
+/* ---------- HOURS / INFO STRIP ---------- */
+.info-strip{display:flex;flex-wrap:wrap;gap:2px;background:var(--line);border-radius:16px;overflow:hidden;border:1px solid var(--line);}
+.info-cell{flex:1;min-width:180px;background:var(--carbon);padding:26px;text-align:center;}
+.info-cell .k{font-family:'Space Mono',monospace;font-size:11px;color:var(--smoke);letter-spacing:.1em;text-transform:uppercase;margin-bottom:8px;}
+.info-cell .v{font-family:'Space Mono',monospace;font-size:19px;color:var(--steel);font-weight:700;}
+
+/* ---------- FINAL CTA ---------- */
+.final{text-align:center;position:relative;overflow:hidden;padding:100px 24px;}
+.final::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 50% 30%, rgba(232,38,47,0.20), transparent 55%);pointer-events:none;}
+.final .ring-hero{width:110px;height:110px;margin-bottom:20px;}
+.final .ring-hero .z-mark{font-size:44px;}
+.final h2{font-size:clamp(30px,5.5vw,54px);position:relative;z-index:1;max-width:640px;margin:0 auto 16px;}
+.final p{max-width:460px;margin:0 auto 34px;position:relative;z-index:1;font-size:16px;}
+.final .btn-primary{position:relative;z-index:1;}
+
+/* ---------- FOOTER ---------- */
+footer{padding:44px 0;}
+.foot-in{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px;}
+.foot-brand{display:flex;align-items:center;gap:10px;}
+.foot-links{display:flex;gap:22px;flex-wrap:wrap;}
+.foot-links a{font-family:'Space Mono',monospace;font-size:12px;color:var(--smoke);text-decoration:none;letter-spacing:.04em;}
+.foot-links a:hover{color:var(--steel);}
+footer .copy{font-family:'Space Mono',monospace;font-size:11px;color:var(--smoke);opacity:.55;text-align:center;margin-top:30px;}
+
+/* ---------- WHATSAPP FLOATING BUTTON ---------- */
+.wa-float{position:fixed;bottom:22px;right:22px;z-index:60;background:var(--z-red);width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 30px rgba(232,38,47,0.45);text-decoration:none;}
+.wa-float svg{width:28px;height:28px;}
+
+@media (max-width:640px){
+  .hero{min-height:92vh;padding:90px 20px 56px;}
+  .hero-stats{gap:26px;}
+  section{padding:60px 0;}
+  .units-wrap{gap:34px;}
+  .foot-in{flex-direction:column;align-items:flex-start;}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-in">
+    <div class="brand">
+      <div class="mini-ring"><div class="mini-ring-inner"><span>Z</span></div></div>
+      <div class="brand-name">ATHLETICA <b>Z</b> FITNESS</div>
+    </div>
+    <a class="topbar-cta" href="https://wa.me/559294195086?text=Vim%20do%20site%2C%20quero%20me%20matricular" target="_blank" rel="noopener">Matricule-se</a>
+  </div>
+</div>
+
+<div class="hero">
+  <p class="hero-eyebrow">8 UNIDADES · MANAUS</p>
+  <div class="ring-hero"><div class="ring-hero-inner"><div class="z-mark">Z</div></div></div>
+  <h1>TREINE<br>PESADO. <span>TREINE</span><br>PERTO DE VOCÊ.</h1>
+  <p class="sub">Cárdio, musculação e fitpilates com horário livre, sem fidelidade escondida e sem taxa extra — em qualquer uma das 8 unidades da Athletica Z Fitness em Manaus.</p>
+  <div class="hero-ctas">
+    <a class="btn-primary" href="https://wa.me/559294195086?text=Vim%20do%20site%2C%20quero%20me%20matricular" target="_blank" rel="noopener">Quero me matricular</a>
+    <a class="btn-ghost" href="#planos">Ver planos</a>
+  </div>
+  <div class="hero-stats">
+    <div class="hstat"><b>8</b><span>Unidades</span></div>
+    <div class="hstat"><b>44K</b><span>Seguidores</span></div>
+    <div class="hstat"><b>05–23H</b><span>Horário</span></div>
+  </div>
+</div>
+
+<div class="wrap">
+
+<!-- GALLERY -->
+<section>
+  <div class="shead center" style="margin-left:auto;margin-right:auto;">
+    <p class="eyebrow">Treino de verdade</p>
+    <h2>Suor, foco e resultado</h2>
+  </div>
+  <div class="gallery">
+    <div class="gallery-item">
+      <img src="data:image/jpeg;base64,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
+
